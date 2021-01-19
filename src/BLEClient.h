@@ -50,7 +50,7 @@ public:
 
 	bool                                       isConnected();                 // Return true if we are connected.
 
-	void                                       setClientCallbacks(BLEClientCallbacks *pClientCallbacks, bool deleteCallbacks = true);
+	void                                       setClientCallbacks(BLEClientCallbacks *pClientCallbacks, bool deleteCallbacks = false);
 	void                                       setValue(BLEUUID serviceUUID, BLEUUID characteristicUUID, std::string value);   // Set the value of a given characteristic at a given service.
 
 	std::string                                toString();                    // Return a string representation of this client.
